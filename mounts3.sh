@@ -34,7 +34,7 @@ sudo mkdir /mys3bucket
 
 sudo s3fs $bucket_name /mys3bucket -o use_cache=/tmp -o allow_other -o uid=1001 -o mp_umask=002 -o multireq_max=5 -o use_path_request_style -o url=https://s3-$region.amazonaws.com
 
-sudo which s3fs
+sudo which s3fs /usr/local/bin/s3fs
 
 sudo touch /etc/rc.local
 
